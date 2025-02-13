@@ -1,4 +1,4 @@
-function eggPriceAndTptalPayment(salesQuantity: number) : string {
+function eggPriceAndTotalPayment(salesQuantity: number) : string {
 
     if (salesQuantity > 50) {
         return `You are buying ${salesQuantity} eggs and total payment: ${4 * salesQuantity} ₺`
@@ -17,17 +17,17 @@ function eggPriceAndTptalPayment(salesQuantity: number) : string {
     }
 }
 
-let price1 = eggPriceAndTptalPayment(51)
-console.log(price1)
+let payment1 = eggPriceAndTotalPayment(51)
+console.log(payment1)
 
-let price2 = eggPriceAndTptalPayment(14)
-console.log(price2) 
+let payment2 = eggPriceAndTotalPayment(14)
+console.log(payment2) 
 
-let price3 = eggPriceAndTptalPayment(5)
-console.log(price3)
+let payment3 = eggPriceAndTotalPayment(5)
+console.log(payment3)
 
-let price4 = eggPriceAndTptalPayment(-5)
-console.log(price4)
+let payment4 = eggPriceAndTotalPayment(-5)
+console.log(payment4)
 
 // You are buying 51 eggs and total payment: 204 ₺
 // You are buying 14 eggs and total payment: 59.5 ₺
