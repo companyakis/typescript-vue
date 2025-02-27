@@ -9,10 +9,10 @@ export const budgetSlice = createSlice({
     initialState,
     reducers: {
         incrementBudget: (state) => {
-            state.value += 100
+            state.budget += 100
         },
         decrementBudget: (state) => {
-            state.value -= 100
+            state.budget -= 100
         }
     }
 })
