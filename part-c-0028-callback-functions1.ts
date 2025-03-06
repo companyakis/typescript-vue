@@ -22,7 +22,7 @@ function processNumbers(arr, callback) {
 
 let result1 = processNumbers(numbers, addOne)
 
-console.log(result1)
+console.log(result1) //
 
 let result2 = processNumbers(numbers, addTen)
 
