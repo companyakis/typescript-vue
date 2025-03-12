@@ -1,13 +1,18 @@
-type sum = (a: number, b: number, c?: number) => number
+function personInfo(firstName: string, lastName: string, secondName?: string) : string {
 
-let addition: sum = function (a, b, c = 0) {
-    
-    return a + b + c
+    if (typeof secondName !== "undefined") {
+
+        return `Person: ${firstName} ${secondName} ${lastName}`
+    }
+
+    return `Person: ${firstName} ${lastName}`
+
 }
 
-console.log(addition(3, 5, 7))
+console.log(personInfo("Mustafa", "Büyükdereli", "Barbaros"))
 
-console.log(addition(3, 5))
+console.log(personInfo("Hakan", "Büyükdereli"))
 
-// 15
-// 8
+
+// Person: Mustafa Barbaros Büyükdereli
+// Person: Hakan Büyükdereli
