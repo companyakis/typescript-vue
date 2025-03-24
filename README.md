@@ -1,3 +1,3 @@
-# TypeScript and Web3 Smart Contracts
+# TypeScript 2025
 
 
